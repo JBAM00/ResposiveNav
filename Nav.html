@@ -17,21 +17,25 @@
         </ul>
         <ul>
             <li><a href="#">Home</a></li>
-            <li class="hideonmobile" ><a href="#">Sports Cars</a></li>
-            <li class="hideonmobile" ><a href="#">About</a></li>
-            <li class="hideonmobile" ><a href="#">Login</a></li>
+            <li class="hideonmobile" ><a class="hide" href="#">Sports Cars</a></li>
+            <li class="hideonmobile" ><a class="hide" href="#">About</a></li>
+            <li class="hideonmobile" ><a class="hide" href="#">Login</a></li>
             <li onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     </nav>
     <script>
         const showSidebar = () => {
             const sidebar = document.querySelector('.sidebar');
+            const hide = document.querySelector('.hide');
             sidebar.style.display = 'flex';
+            hide.style.display = 'none';
         }
 
         const hideSidebar = () => {
             const sidebar = document.querySelector('.sidebar');
+            const hide = document.querySelector('.hide');
             sidebar.style.display = 'none';
+            hide.style.display = 'flex';
         }
     </script>
 </body>
